@@ -18,9 +18,9 @@ If a `filter` is active (e.g., set in the _Data > View_ tab) generate results fo
 
 Predictions were derived from a linear regression and an neural network with two nodes in the hidden layer on the `diamonds` data. The variables `price` and `carat` were log-transformed prior to estimation.The data is available through the _Data > Manage_ tab (i.e., choose `Examples` from the `Load data of type` drop-down and press `Load examples`). The predictions shown below were generated in the _Predict_ tab.
 
-<p align="center"><img src="figures_model/evalreg_ann_predict.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/evalreg_ann_predict.png"></p>
 
 The test statistics show a small, but consistent, advantage for the ANN.
 
-<p align="center"><img src="figures_model/evalreg_summary_plot.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/evalreg_summary_plot.png"></p>
 

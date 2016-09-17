@@ -55,15 +55,15 @@ The odds-ratios from the logistic regression can be interpreted as follows:
 - Compared to female passengers, the odds of survival for male passengers was 91.7% lower, keeping all other variables in the model constant.
 - For an increase in passenger age of 1 year the odds of survival decreased by 0.34%, keeping all other variables in the model constant.
 
-<p align="center"><img src="figures_model/logistic_summary.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/logistic_summary.png"></p>
 
 In addition to the numerical output provided in the _Summary_ tab we can also evaluate the link between `survival`, `class`, `sex`, and `age` visually (see _Plot_ tab). The settings in the side-panel are the same as before. In the screenshot below we see a coefficient (or rather an odds-ratio) plot with confidence intervals. The relative importance of gender and class compared to age clearly stands out. Note: click the check box for standardized coefficients (i.e., `standardize`) in the _Summary_ tab and see if your conclusion changes.
 
-<p align="center"><img src="figures_model/logistic_plot.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/logistic_plot.png"></p>
 
 Probabilities, are more convenient for interpretation than coefficients or odds from a logit model. To see how survival probabilities change across passenger classes select `Command` from the `Prediction input` dropdown in the _Predict_ tab, type `pclass = levels(pclass)` in the **Prediction command** box, and press return.
 
-<p align="center"><img src="figures_model/logistic_predict.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/logistic_predict.png"></p>
 
 The figure above shows that the probabilities drop sharply for 2nd and 3rd class passengers compared to 1st class passengers. For males of average age (approx. 30 yo in the sample) the survival probability was close to 50%. For 30 yo, male, 3rd class passengers this probability was closer to 9%.
 
@@ -96,4 +96,4 @@ To see the effects for age type `age = seq(0, 100, 20)` in the **Prediction comm
 
 For a more comprehensive overview of the influence of gender, age, and passenger class on the chances of survival we can generate a full table of probabilities by selecting `Command` from the `Prediction input` dropdown in the _Predict_ tab and selecting `Titanic` from the `Predict for profiles`. There are too many numbers to easily interpret in table form but the figure gives a clear overview of how survival probabilities change with `age`, `gender`, and `pclass`:
 
-<p align="center"><img src="figures_model/logistic_predict_data.png"></p>
+<p align="center"><img src="https://radiant-rstats.github.io/docs/model/figures_model/logistic_predict_data.png"></p>
